@@ -62,11 +62,11 @@
 #define WIFI_SUBNETMASK        "255.255.255.0"   // [IpAddress3] If not using DHCP set Network mask
 #define WIFI_DNS               "192.168.1.1"     // [IpAddress4] If not using DHCP set DNS IP address (might be equal to WIFI_GATEWAY)
 
-#define STA_SSID1              ""                // [Ssid1] Wifi SSID
-#define STA_PASS1              ""                // [Password1] Wifi password
-#define STA_SSID2              ""                // [Ssid2] Optional alternate AP Wifi SSID
-#define STA_PASS2              ""                // [Password2] Optional alternate AP Wifi password
-#define WIFI_CONFIG_TOOL       WIFI_RETRY        // [WifiConfig] Default tool if wifi fails to connect
+#define STA_SSID1              "wibble"                // [Ssid1] Wifi SSID
+#define STA_PASS1              "B1gJungle2"                // [Password1] Wifi password
+#define STA_SSID2              "rlab 2"                // [Ssid2] Optional alternate AP Wifi SSID
+#define STA_PASS2              "hackmenow"                // [Password2] Optional alternate AP Wifi password
+#define WIFI_CONFIG_TOOL       WIFI_WAIT         // [WifiConfig] Default tool if wifi fails to connect
                                                  //   (WIFI_RESTART, WIFI_SMARTCONFIG, WIFI_MANAGER, WIFI_WPSCONFIG, WIFI_RETRY, WIFI_WAIT, WIFI_SERIAL)
 #define WIFI_CONFIG_NO_SSID    WIFI_WPSCONFIG    // Default tool if wifi fails to connect and no SSID is configured
                                                  //   (WIFI_SMARTCONFIG, WIFI_MANAGER, WIFI_WPSCONFIG, WIFI_SERIAL)
