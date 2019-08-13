@@ -64,9 +64,9 @@
 
 #define STA_SSID1              "wibble"                // [Ssid1] Wifi SSID
 #define STA_PASS1              "B1gJungle2"                // [Password1] Wifi password
-#define STA_SSID2              "rlab 2"                // [Ssid2] Optional alternate AP Wifi SSID
+#define STA_SSID2              "rlab"                // [Ssid2] Optional alternate AP Wifi SSID
 #define STA_PASS2              "hackmenow"                // [Password2] Optional alternate AP Wifi password
-#define WIFI_CONFIG_TOOL       WIFI_WAIT         // [WifiConfig] Default tool if wifi fails to connect
+#define WIFI_CONFIG_TOOL       WIFI_MANAGER         // [WifiConfig] Default tool if wifi fails to connect
                                                  //   (WIFI_RESTART, WIFI_SMARTCONFIG, WIFI_MANAGER, WIFI_WPSCONFIG, WIFI_RETRY, WIFI_WAIT, WIFI_SERIAL)
 #define WIFI_CONFIG_NO_SSID    WIFI_WPSCONFIG    // Default tool if wifi fails to connect and no SSID is configured
                                                  //   (WIFI_SMARTCONFIG, WIFI_MANAGER, WIFI_WPSCONFIG, WIFI_SERIAL)
