@@ -365,6 +365,7 @@ enum SupportedModules {
   SYF05,
   SONOFF_L1,
   SONOFF_IFAN03,
+  WIFI_PLUG,
   MAXMODULE};
 
 #define USER_MODULE        255
@@ -747,6 +748,7 @@ const uint8_t kModuleNiceList[] PROGMEM = {
   SYF05,
   YTF_IR_BRIDGE,
   WITTY,               // Development Devices
+  WIFI_PLUG,
   WEMOS
 };
 
@@ -2044,6 +2046,25 @@ const mytmplt kModules[MAXMODULE] PROGMEM = {
      GPIO_LED1_INV,    // GPIO13 WIFI_CHK Blue Led on PCA (0 = On, 1 = Off) - Link and Power status
      GPIO_REL2,        // GPIO14 WIFI_O1 Relay 2 (0 = Off, 1 = On) controlling the fan
      GPIO_REL4,        // GPIO15 WIFI_O3 Relay 4 (0 = Off, 1 = On) controlling the fan
+     0, 0
+  },
+  { "WiFi Plug",    // WiFi plug
+     0,             // GPIO00
+     GPIO_TXD,      // GPIO01 ESP_TXD Serial RXD 
+     0,             // GPIO02 ESP_LOG
+     GPIO_RXD,      // GPIO03 ESP_RXD Serial TXD
+     0,             // GPIO04 DEBUG_RX
+     GPIO_KEY1,     // GPIO05 DEBUG_TX
+                    // GPIO06 (SD_CLK   Flash)
+                    // GPIO07 (SD_DATA0 Flash QIO/DIO/DOUT)
+                    // GPIO08 (SD_DATA1 Flash QIO/DIO/DOUT)
+     0,             // GPIO09
+     0,             // GPIO10
+                    // GPIO11 (SD_CMD   Flash)
+     GPIO_LEDLNK_INV, // GPIO12
+     GPIO_REL1_INV,     // GPIO13
+     GPIO_LED1_INV,     // GPIO14
+     0,             // GPIO15
      0, 0
   }
 };
